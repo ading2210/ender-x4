@@ -84,4 +84,9 @@ In my design, there are two different toolhead designs. The "A" toolhead is on t
 
 Creating the hotend assembly was a bit annoying because of the unconventional layout. I need the hotend fan to be *behind* the hotend rather than in front of it, so the hotend can't be directly mounted to the X carriage base. The fan duct for the part cooling fan was also a pain, but I'm going to blame that on my inexperience in modeling this kind of part in Fusion. 
 
-Following the hotend assembly, I moved on to building both toolheads. This was relatively simple, since I just had to attach the hotend assembly to the extruder and X carriage base. 
+<img src="images/hotend_assembly.png" width="300px"> 
+
+Following the hotend assembly, I moved on to building both toolheads. This was relatively simple, since I just had to attach the hotend assembly to the extruder and X carriage base. I also added a mount for a CR Touch probe on the A toolhead.
+
+<img src="images/toolhead_a.png" height="400px"> 
+<img src="images/toolhead_b.png" height="400px"> 
