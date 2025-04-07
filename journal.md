@@ -1,10 +1,10 @@
 Made by: ading2210 // vk6
 Repository link: https://github.com/ading2210/infill-printer
-Total hours so far: 7
+Total hours so far: 15
 
 - [x] I have a 3D printer or will be getting one before March 21st
 
-## 3/13/25 (2.5 hrs) - Research design goals and feasibility
+## 3/13/25 - Research design goals and feasibility (2.5 hrs)
 
 I did these notes on a Google Doc originally, so here it is copy-pasted:
 
@@ -64,3 +64,24 @@ I did these notes on a Google Doc originally, so here it is copy-pasted:
 * Keep stock hotend   
 * Keep stock motors  
 * Direct drive
+
+## 4/1/25 - Frame, Y Axis (1.5 hrs)
+
+I'm going to re-use the Ender 3 Y axis carriage and use the same design for the bottom portion of the printer's frame. I don't see a way I can improve the Y gantry without excessively modifying the parts, because the aluminum extrusions are already machined with slots for the Y axis gantry. Also, the various Ender 3 variants use slightly different Y axis gantries (this is pretty much the only mechanical change between the different Ender 3s) so making a single design to accommodate all of them is unrealistic. 
+
+## 4/2/25 - Frame, Start X Axis (1 hr)
+
+- Assemble the Y Axis and attach it to the frame
+- Start assembling the X gantry
+
+## 4/4/25 - Continue X Axis (2 hrs)
+
+- Create mount for second X motor
+- Add motors to X axis assembly
+
+## 4/6/25 - Create A/B Toolheads (10 hrs)
+In my design, there are two different toolhead designs. The "A" toolhead is on the left side of the X gantry, and the "B" toolhead is on the right. The hotend assembly is mirrored on the B toolhead, but the extruder mount has to be different. The goal for the hotend assembly is to get the hotend as close to the center of the printer as possible. This allows the hotend on each toolhead to come close to each other while printing, thus maximizing the printable area.
+
+Creating the hotend assembly was a bit annoying because of the unconventional layout. I need the hotend fan to be *behind* the hotend rather than in front of it, so the hotend can't be directly mounted to the X carriage base. The fan duct for the part cooling fan was also a pain, but I'm going to blame that on my inexperience in modeling this kind of part in Fusion. 
+
+Following the hotend assembly, I moved on to building both toolheads. This was relatively simple, since I just had to attach the hotend assembly to the extruder and X carriage base. 
