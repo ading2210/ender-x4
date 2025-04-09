@@ -1,6 +1,6 @@
 Made by: ading2210 // vk6
 Repository link: https://github.com/ading2210/infill-printer
-Total hours so far: 25
+Total hours so far: 35
 
 - [x] I have a 3D printer or will be getting one before March 21st
 
@@ -35,7 +35,7 @@ I did these notes on a Google Doc originally, so here it is copy-pasted:
   * Main: BTT SKR Mini E3 v2 ($35)  
     * Used for x axis and bed heater  
   * Extra: 2x stock Creality v4.2.7   
-    * Used for all 4 extruders, z axis y, axis, 4 hotend heaters  
+    * Used for all 4 extruders, z axis, y axis, 4 hotend heaters  
 * Extra cost: $35-$90
 
 **Single Carriage Design**
@@ -108,8 +108,43 @@ I then finished one half of the X axis gantry, which contains both A and B toolh
 
 To create the full X axis gantry, I copied the part shown above and rotated it 180 degrees. I added connecting pieces between the two halves, and attached the Z nuts to them. 
 
-<img src="images/x_assembly.png" height="400px"> 
+<img src="images/x_assembly_1.png" height="400px"> 
 
 In the full printer assembly, I added the extrusions for the Z axis as well as the X gantry. I made a mount for the Z motors, lead screws, and Z endstop.
 
 <img src="images/printer_assembly_2.png" height="400px"> 
+
+
+## 4/8/25 - Finish Initial Printer Design (10 hrs)
+
+Although the Z axis was complete, I still needed to put braces between both sides of the Z gantry. On top of these braces, I put the 4 spool holders as well.
+
+<img src="images/top_assembly.png" height="400px"> 
+
+Next, I modeled the mounts for the two PSUs and the power switch. I found that arranging the PSUs on their sides wastes the least amount of space, and simplifies the mounting hardware.
+
+<img src="images/psu_mount.png" height="400px"> 
+
+To mount the 3 control boards, I have them arranged in a rack, with each stacked on top of each other. This rack attaches to the 4040 extrusion on the base of the printer. I'm a bit concerned that there won't be enough airflow across the control boards, but I'll have to wait until this is actually built to see if that will be a problem. 
+
+<img src="images/control_board_rack_1.png" height="400px"> 
+<img src="images/control_board_rack_2.png" height="400px"> 
+
+I also quickly made a bracket for the Raspberry Pi 3. I used an RPi 3 instead of a newer model mainly because I already have one lying around. The other reason is that it's significantly cheaper ($20 used) and I don't need more processing power anyways. This bracket, just like the control board rack, attaches to an extrusion on the base.
+
+<img src="images/rpi_mount.png" height="400px"> 
+
+The final item missing in the printer is the LCD mount and legs for the frame. The legs attach to the side of the 4040 extrusions on the base, and the LCD attaches to the front right leg. 
+
+<img src="images/leg_and_lcd.png" height="400px"> 
+
+And with that, the initial version of the printer is complete. 
+
+<img src="images/printer_assembly_3.png" height="400px"> 
+<img src="images/printer_assembly_4.png" height="400px"> 
+<img src="images/printer_assembly_5.png" height="400px"> 
+<img src="images/x_assembly_2.png" height="400px"> 
+
+Here it is next to an original Ender 3 v1 for comparison.
+
+<img src="images/printer_next_to_ender.png" height="400px"> 
