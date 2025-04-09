@@ -1,6 +1,6 @@
 Made by: ading2210 // vk6
 Repository link: https://github.com/ading2210/infill-printer
-Total hours so far: 15
+Total hours so far: 25
 
 - [x] I have a 3D printer or will be getting one before March 21st
 
@@ -74,19 +74,42 @@ I'm going to re-use the Ender 3 Y axis carriage and use the same design for the 
 - Assemble the Y Axis and attach it to the frame
 - Start assembling the X gantry
 
+<img src="images/printer_assembly_1.png" height="300px"> 
+
 ## 4/4/25 - Continue X Axis (2 hrs)
 
 - Create mount for second X motor
 - Add motors to X axis assembly
 
+<img src="images/x_gantry_part_1.png" height="300px"> 
+
 ## 4/6/25 - Create A/B Toolheads (10 hrs)
+
 In my design, there are two different toolhead designs. The "A" toolhead is on the left side of the X gantry, and the "B" toolhead is on the right. The hotend assembly is mirrored on the B toolhead, but the extruder mount has to be different. The goal for the hotend assembly is to get the hotend as close to the center of the printer as possible. This allows the hotend on each toolhead to come close to each other while printing, thus maximizing the printable area.
 
 Creating the hotend assembly was a bit annoying because of the unconventional layout. I need the hotend fan to be *behind* the hotend rather than in front of it, so the hotend can't be directly mounted to the X carriage base. The fan duct for the part cooling fan was also a pain, but I'm going to blame that on my inexperience in modeling this kind of part in Fusion. 
 
-<img src="images/hotend_assembly.png" width="300px"> 
+<img src="images/hotend_assembly.png" height="400px"> 
 
 Following the hotend assembly, I moved on to building both toolheads. This was relatively simple, since I just had to attach the hotend assembly to the extruder and X carriage base. I also added a mount for a CR Touch probe on the A toolhead.
 
 <img src="images/toolhead_a.png" height="400px"> 
 <img src="images/toolhead_b.png" height="400px"> 
+
+## 4/7/25 - Finish X and Z Axis (10 hrs)
+
+First, I needed to modify my B toolhead design to add in a belt holder. This is because the belt for this toolhead will be placed well above aluminum extrusion rather than around it like the stock toolhead does. This was a simple addition, and I used a model of a GT2 belt as a reference so I could make a cut of the belt profile.
+
+<img src="images/toolhead_b_back.png" height="400px"> 
+
+I then finished one half of the X axis gantry, which contains both A and B toolheads on the same axis. The new additions here are the endstop mounts, belt tensioner, and the brackets on either side for the joining pieces to the other half of the X gantry.
+
+<img src="images/x_gantry_part_2.png" height="400px"> 
+
+To create the full X axis gantry, I copied the part shown above and rotated it 180 degrees. I added connecting pieces between the two halves, and attached the Z nuts to them. 
+
+<img src="images/x_assembly.png" height="400px"> 
+
+In the full printer assembly, I added the extrusions for the Z axis as well as the X gantry. I made a mount for the Z motors, lead screws, and Z endstop.
+
+<img src="images/printer_assembly_2.png" height="400px"> 
