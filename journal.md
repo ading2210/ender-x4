@@ -148,3 +148,17 @@ And with that, the initial version of the printer is complete.
 Here it is next to an original Ender 3 v1 for comparison.
 
 <img src="images/printer_next_to_ender.png" height="400px"> 
+
+## 4/9/25 - Polishing Design (2 hrs)
+
+I added end caps to the 4040 extrusions on the base and chamfers to the legs to improve the aesthetics.
+
+<img src="images/4040_end_cap.png" height="400px"> 
+
+I also made the spool holder arms thicker in order to improve their strength. 
+
+<img src="images/spool_holder.png" height="400px"> 
+
+Finally, I added chamfers to a bunch of other parts and fixed various errors with intersecting geometry. 
+
+<img src="images/printer_assembly_6.png" height="400px"> 
