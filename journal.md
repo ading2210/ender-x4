@@ -1,6 +1,6 @@
 Made by: ading2210 // vk6
 Repository link: https://github.com/ading2210/infill-printer
-Total hours so far: 35
+Total hours so far: 44
 
 - [x] I have a 3D printer or will be getting one before March 21st
 
@@ -149,7 +149,7 @@ Here it is next to an original Ender 3 v1 for comparison.
 
 <img src="images/printer_next_to_ender.png" height="400px"> 
 
-## 4/9/25 - Polishing Design (2 hrs)
+## 4/9/25 - Design Revisions (2 hrs)
 
 I added end caps to the 4040 extrusions on the base and chamfers to the legs to improve the aesthetics.
 
@@ -157,8 +157,27 @@ I added end caps to the 4040 extrusions on the base and chamfers to the legs to 
 
 I also made the spool holder arms thicker in order to improve their strength. 
 
-<img src="images/spool_holder.png" height="400px"> 
+<img src="images/spool_holder_1.png" height="400px"> 
 
 Finally, I added chamfers to a bunch of other parts and fixed various errors with intersecting geometry. 
 
 <img src="images/printer_assembly_6.png" height="400px"> 
+
+## 4/10/25 - More Revisions, Work on BOM (3 hrs)
+I went back and reviewed all the screw holes and made sure they were the right diameter. Most of them will be self-tapping, so I had to reduce the hole diameter to accommodate. I also changed some of the screw type which were used in order to reduce the cost. For instance, I replaced the usage of M2 square nuts in the belt tensioner to use M3 square nuts instead. This was so that fewer unique fasteners would need to be purchased.
+
+I then put together a BOM for the printer.
+
+![A screenshot of the BOM](images/bom.png)
+
+## 4/11/25 - More Revisions, Source Parts (4 hrs)
+
+I changed the base of the spool holder to use two M3x16 screws on either side instead of two M3x35 screws that go all the way through.
+
+<img src="images/spool_holder_2.png" height="400px"> 
+
+The usage of 2.0mm thick M3 square nuts was changed to 2.5mm thick ones because they are cheaper and more commonly available.
+
+I also researched every part I needed to buy and found that it barely fits in my $300 budget.
+
+![A screenshot of a spreadsheet with the costs of each part.](images/bom_cost.png)
