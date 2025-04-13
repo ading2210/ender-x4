@@ -98,7 +98,7 @@ Following the hotend assembly, I moved on to building both toolheads. This was r
 
 ## 4/7/25 - Finish X and Z Axis (10 hrs)
 
-First, I needed to modify my B toolhead design to add in a belt holder. This is because the belt for this toolhead will be placed well above aluminum extrusion rather than around it like the stock toolhead does. This was a simple addition, and I used a model of a GT2 belt as a reference so I could make a cut of the belt profile.
+First, I needed to modify my B toolhead design to add in a belt holder. This is because the belt for this toolhead will be placed well above the aluminum extrusion rather than around it like the stock toolhead does. This was a simple addition, and I used a model of a GT2 belt as a reference so I could make a cut of the belt profile.
 
 <img src="images/toolhead_b_back.png" height="400px"> 
 
