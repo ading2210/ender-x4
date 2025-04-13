@@ -1,12 +1,18 @@
 Made by: ading2210 // vk6
+
 Repository link: https://github.com/ading2210/infill-printer
-Total hours so far: 44
+
+Total hours so far: 48
 
 - [x] I have a 3D printer or will be getting one before March 21st
 
+This printer is has been designed as part of Hack Club's [Infill](https://infill.hackclub.com/) event. 
+
 ## 3/13/25 - Research design goals and feasibility (2.5 hrs)
 
-I did these notes on a Google Doc originally, so here it is copy-pasted:
+<details>
+
+<summary>I did these notes on a Google Doc originally, so here it is copy-pasted.</summary>
 
 **Goals:**
 
@@ -64,6 +70,8 @@ I did these notes on a Google Doc originally, so here it is copy-pasted:
 * Keep stock hotend   
 * Keep stock motors  
 * Direct drive
+
+</details>
 
 ## 4/1/25 - Frame, Y Axis (1.5 hrs)
 
@@ -147,7 +155,7 @@ And with that, the initial version of the printer is complete.
 
 Here it is next to an original Ender 3 v1 for comparison.
 
-<img src="images/printer_next_to_ender.png" height="400px"> 
+<img src="images/printer_next_to_ender_1.png" height="400px"> 
 
 ## 4/9/25 - Design Revisions (2 hrs)
 
@@ -181,3 +189,9 @@ The usage of 2.0mm thick M3 square nuts was changed to 2.5mm thick ones because 
 I also researched every part I needed to buy and found that it barely fits in my $300 budget.
 
 ![A screenshot of a spreadsheet with the costs of each part.](images/bom_cost.png)
+
+## 4/12/25 - Set up Repository and Publish (4 hrs)
+
+I wrote the README for this repository, added more images, added the license and published the repo publicly.
+
+I also made a PR in the [Infill website repo](https://github.com/hackclub/infill/pull/63) to improve their build scripts. This journal markdown file contains a lot of relative image URLs pointing to files within this repo. Before, this wasn't supported and I would be forced to replace all of them with absolute URLs. 
