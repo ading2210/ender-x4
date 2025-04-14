@@ -1,6 +1,6 @@
 Made by: ading2210 // vk6
 
-Repository link: https://github.com/ading2210/infill-printer
+Repository link: https://github.com/ading2210/ender-x4
 
 Total hours so far: 48
 
@@ -195,3 +195,7 @@ I also researched every part I needed to buy and found that it barely fits in my
 I wrote the README for this repository, added more images, added the license and published the repo publicly.
 
 I also made a PR in the [Infill website repo](https://github.com/hackclub/infill/pull/63) to improve their build scripts. This journal markdown file contains a lot of relative image URLs pointing to files within this repo. Before, this wasn't supported and I would be forced to replace all of them with absolute URLs. 
+
+## 4/14/25 - Order All Parts (1 hr)
+
+I have ordered all of the parts from Ebay and Amazon. The total cost was about $340, $300 of which was covered by the Hack Club grant. The stuff on Ebay should arrive by 4/19 and everything from Amazon will arrive by 4/16.
