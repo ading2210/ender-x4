@@ -2,7 +2,7 @@ Made by: ading2210 // vk6
 
 Repository link: https://github.com/ading2210/ender-x4
 
-Total hours so far: 48
+Total hours so far: 49
 
 - [x] I have a 3D printer or will be getting one before March 21st
 
@@ -198,4 +198,12 @@ I also made a PR in the [Infill website repo](https://github.com/hackclub/infill
 
 ## 4/14/25 - Order All Parts (1 hr)
 
-I have ordered all of the parts from Ebay and Amazon. The total cost was about $340, $300 of which was covered by the Hack Club grant. The stuff on Ebay should arrive by 4/19 and everything from Amazon will arrive by 4/16.
+I have ordered all of the parts from Ebay and Amazon. The total cost was about $340, $300 of which was covered by the Hack Club grant. The stuff on Ebay should arrive by 4/17 and everything from Amazon will arrive by 4/15.
+
+## 4/15/25 - Research Klipper Configuration (1 hr)
+
+While I wait for the rest of the parts to arrive, I spent some time researching how I might configure the printer with Klipper. Having multiple control boards is pretty trivial, but the tricky part is the X axis movements. Even though Klipper already supports IDEX printers via the [`dual_carriage`](https://www.klipper3d.org/Config_Reference.html?h=safe_#dual_carriage) config, it only supports 2 toolheads on a single gantry. 
+
+Thus, I need to manually set up the X motors and set the kinematics manually using GCode macros, similarly to this post in the Klipper forum: https://klipper.discourse.group/t/emulating-6-carriage-idex-by-syncing-steppers/18391/7
+
+Another issue is that regular Klipper does not support multiple bed probes by default. Currently, I'm using two CR Touch probes for each X gantry, so this is a required feature for me. It seems that the [Klipper for CNC fork](https://github.com/naikymen/klipper-for-cnc?tab=readme-ov-file#multi-probing) does support this, but that fork comes with a bunch of other caveats.
