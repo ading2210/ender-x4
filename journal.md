@@ -212,7 +212,7 @@ Thus, I need to manually set up the X motors and set the kinematics manually usi
 
 Another issue is that regular Klipper does not support multiple bed probes by default. Currently, I'm using two CR Touch probes for each X gantry, so this is a required feature for me. It seems that the [Klipper for CNC fork](https://github.com/naikymen/klipper-for-cnc?tab=readme-ov-file#multi-probing) does support this, but that fork comes with a bunch of other caveats.
 
-## 4/16/25 - Start Printing Parts, Revise Design (3 hrs)
+## 4/16/25 - Start Printing Parts, Revise Design (5 hrs)
 
 Last night I started a printing the legs. This print finished in the morning. 
 
@@ -233,3 +233,19 @@ The top brace pieces were just barely too wide to fit on my Prusa Mini+ so I mad
 I added this small protrusion in the base of the spool holder so that the spool holder arms cannot rotate inadvertently.
 
 <img src="images/spool_holder_3.png" height="400px"> 
+
+In the evening, I printed some more parts. I now have all of the legs and the two braces that go at the top of the frame. 
+
+<img src="images/printed_parts_2.jpg" height="400px"> 
+
+At this point, I realized that I had made a mistake with the sizing of the holes for the M5 screws. Because I had ordered button head screws instead socket cap screws, the diameter of the screw head was 9.5mm instead of 8.5mm. The counterbore in my parts was only 9mm, so I had to expand the hole using an 3/8 inch (9.52mm) drill bit. 
+
+To test the fit of the screws, I used the M5 screws and T nuts to attach one of the top braces to the 2020 extrusion on my old Ender 3 v1. This worked perfectly and gave me confidence that the design would be strong enough mechanically.
+
+<img src="images/2020_t_nut_test.jpg" height="400px"> 
+
+I then started another print to run overnight. This print contains the corner braces for the Z axis extrusions and the mount for the Z axis motors.
+
+<img src="images/printed_parts_3.jpg" height="400px"> 
+
+Finally, I removed the X endstop from my old Ender 3, so that I wouldn't need to buy any new ones. I need to switch my Ender 3 to use sensorless homing, but I have not yet configured this.
