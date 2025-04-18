@@ -126,7 +126,6 @@ In the full printer assembly, I added the extrusions for the Z axis as well as t
 
 <img src="images/printer_assembly_2.png" height="400px"> 
 
-
 ## 4/8/25 - Finish Initial Printer Design (10 hrs)
 
 Although the Z axis was complete, I still needed to put braces between both sides of the Z gantry. On top of these braces, I put the 4 spool holders as well.
@@ -249,3 +248,45 @@ I then started another print to run overnight. This print contains the corner br
 <img src="images/printed_parts_3.jpg" height="400px"> 
 
 Finally, I removed the X endstop from my old Ender 3, so that I wouldn't need to buy any new ones. I need to switch my Ender 3 to use sensorless homing, but I have not yet configured this.
+
+## 4/16/25 - Repair Ender 3 Printers (6 hrs)
+
+The two Ender 3 V2 Neo printers that I ordered from Ebay arrived today. My plan is to reassemble both printers, verify that all the components work, and then disassemble them for the parts.
+
+<img src="images/ender_3_packages.jpg" height="400px"> 
+
+Unfortunately, the Ebay seller didn't send me all of the items that I paid for. I'm missing a screen, spool holder, power cord, and CR touch sensor. However, I contacted the seller and they agreed to send me the missing parts. 
+
+<img src="images/ender_3_package_contents.jpg" height="400px"> 
+
+Even though I was missing parts, I still had to get to work on repairing the two printers. I didn't have a functioning screen (the one that I did receive from Ebay had a broken click wheel), so I used a spare 128x64 LCD that I had and flashed the Ender 3 Neo (not V2) firmware to the printer. The only real difference between the Ender 3 V2 Neo and the V1 neo is the display, with the regular Neo using the 128x64 LCD and the V2 Neo using the larger full color LCD. 
+
+<img src="images/ender_3_1_power_on.jpg" height="400px"> 
+
+The first thing I had to fix was the fact that the base of the toolhead carriage was bent, preventing the wheels from being aligned. So I took the toolhead off, bent the metal back into place, and reassembled it. After that, this printer worked perfectly with no problems. I was able to complete a test print without issues, so I moved on to the next one.
+
+<img src="images/ender_3_1_test_print.jpg" height="400px"> 
+
+I noticed there was a loose capacitor in the box for the second printer. It turns out that this capacitor had somehow been ripped off of the control board, taking with it the solder pads.
+
+<img src="images/ender_3_2_bad_board.jpg" height="400px"> 
+
+I checked the schematic for the Creality 4.2.2 board and it appeared that the missing capacitor, C3, isn't too important. 
+
+<img src="images/ender_3_board_schematic.png" height="400px"> 
+
+So I powered on the printer and sure enough, the board appeared to work fine. 
+
+<img src="images/ender_3_2_power_on.jpg" height="400px"> 
+
+Since the scroll wheel on this screen didn't work, I connected to the printer via Pronterface. This confirmed that all of the motors worked. However, the temperatures reported were completely wrong. It was reporting about 100c for the hotend and 90c for the bed even though the printer was cold and no heaters were running. 
+
+<img src="images/ender_3_2_wrong_temp.jpg" height="400px"> 
+
+To check if this problem was the thermistors or with the board, I plugged the thermistor and my spare screen into an old Creality 1.1.4 board which did read the correct temperature. So this confirms that the board is indeed broken and I would need to buy a new one. 
+
+<img src="images/ender_3_3_correct_temp.jpg" height="400px"> 
+
+For now though, I need to use the 1.1.4 board to test the rest of the printer's components. I replaced the broken 4.2.2 board with the working 1.1.4 board, added in a Z endstop, and powered on the printer. This time, everything seemed to work, but I have not yet tested to see if it can still print.
+
+<img src="images/ender_3_2_board_replaced.jpg" height="400px"> 
