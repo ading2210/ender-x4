@@ -143,7 +143,7 @@ To mount the 3 control boards, I have them arranged in a rack, with each stacked
 
 I also quickly made a bracket for the Raspberry Pi 3. I used an RPi 3 instead of a newer model mainly because I already have one lying around. The other reason is that it's significantly cheaper ($20 used) and I don't need more processing power anyways. This bracket, just like the control board rack, attaches to an extrusion on the base.
 
-<img src="images/rpi_mount.png" height="400px"> 
+<img src="images/rpi_mount_1.png" height="400px"> 
 
 The final item missing in the printer is the LCD mount and legs for the frame. The legs attach to the side of the 4040 extrusions on the base, and the LCD attaches to the front right leg. 
 
@@ -290,3 +290,83 @@ To check if this problem was the thermistors or with the board, I plugged the th
 For now though, I need to use the 1.1.4 board to test the rest of the printer's components. I replaced the broken 4.2.2 board with the working 1.1.4 board, added in a Z endstop, and powered on the printer. This time, everything seemed to work, but I have not yet tested to see if it can still print.
 
 <img src="images/ender_3_2_board_replaced.jpg" height="400px"> 
+
+## 4/19/25 - Continue Repairing Ender 3s (4 hrs)
+
+I bought a working 4.2.2 board from a friend for $20, so I no longer have a need for that old 1.1.4 board.
+
+<img src="images/ender_3_2_board_replaced.jpg" height="400px"> 
+
+The metal plate for the X carriage on this printer was also bent just like on the first one. This was a simple fix though.
+
+<img src="images/ender_3_2_bent_carriage.jpg" height="400px"> 
+
+The plastic fan shroud was cracked so badly that the threaded inserts fell out and the fan could not be attached. Thus I just removed it and zip-tied the fan to the X carriage. After that, I could start printing. At first, it seemed to be working great.
+
+<img src="images/ender_3_2_printing.jpg" height="400px"> 
+
+Halfway through this print when it started underextruding really badly. Replacing the nozzle helped but did not eliminate the problem. I spent a while tweaking the hotend and at some point I accidentally stuck a wrench through the running hotend fan and broke it. So after ordering new fans, I'm calling it a day.
+
+## 4/20/25 - Redesign Electronics Mount, Y Axis Mounting
+
+After printing the original stacked control board mount, I quickly realized that it was not going to work. There was simply not enough vertical clearance between the control boards, so routing the wires and screwing in the board would be near impossible. For this new design, I decided to lay out the boards side by side. The fans attach to a separate bracket that screws into the top of the mount. 
+
+<img src="images/electronics_mount_1.png" height="400px"> 
+
+Here it is in the printer assembly.
+
+<img src="images/electronics_mount_2.png" height="400px"> 
+
+I also redesigned the Raspberry Pi mount. Because the RPI uses M2.5 screws (which I don't have), I can't use its mounting holes. Instead, the screws clamp onto the edge of the board. This RPI mount screws into the bottom the of electronics assembly.
+
+<img src="images/rpi_mount_2.png" height="400px"> 
+
+I printed a small test part for this, and confirmed that it does indeed work well. 
+
+<img src="images/rpi_mount_3.jpg" height="400px"> 
+
+Additionally, I made some tweaks to the LCD holder to better accommodate the physical item. This required cutouts at the edge of the screen, below the screen, and around the potentiometer. 
+
+<img src="images/lcd_mount_1.png" height="400px"> 
+
+I also needed a custom bracket for the Y axis assembly. This is because the Y axis in this printer is shifted to the back by a bit, and thus the original screw holes don't work.
+
+<img src="images/y_axis_bracket_1.png" height="400px"> 
+
+Afterwards, I returned to working on repairing the printer. Eventually, I figured out that the hotend was fine, and that it was just the extruder which couldn't push the filament through. The issue appears to be that the PTFE tube is scratched on the inside and thus has too much resistance. The final printer design is direct drive and thus this wouldn't be an issue, so I shouldn't need to worry about this anymore.
+
+## 4/21/25 - Print Parts, Design Buck Converter Mount
+
+That $3 buck converter I ordered has arrived today. I measured the dimensions, and tested the mounting with a small print. 
+
+<img src="images/buck_converter.jpg" height="400px"> 
+
+This worked, so I modeled the buck converter PCB in Fusion, and added a mount for it next to the Raspberry Pi.
+
+<img src="images/rpi_mount_4.png" height="400px"> 
+
+The missing parts from the Ender 3s that I purchased also arrived today. Everything was in good condition, and the screen was even brand new.
+
+<img src="images/ender_3_missing_parts.jpg" height="400px"> 
+
+The screen and CR Touch worked perfectly.
+
+<img src="images/ender_3_working_screen.jpg" height="400px"> 
+
+I finished printing all of the parts for the electronics mount today, so I was able to assemble it. 
+
+<img src="images/electronics_mount_3.jpg" height="400px"> 
+
+<img src="images/electronics_mount_4.jpg" height="400px"> 
+
+I then began to disassemble the second Ender 3 printer so I could reuse the Y axis and frame. I first assembled the Y axis bracket.
+
+<img src="images/y_axis_bracket_2.jpg" height="400px"> 
+
+And then attached the feet to the frame, which completes the base of the frame. 
+
+<img src="images/frame_base.jpg" height="400px"> 
+
+Finally, I attached the LCD to its mount.
+
+<img src="images/lcd_mount_2.jpg" height="400px"> 
