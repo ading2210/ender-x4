@@ -2,7 +2,7 @@ Made by: ading2210 // vk6
 
 Repository link: https://github.com/ading2210/ender-x4
 
-Total hours so far: 52
+Total hours so far: 76
 
 - [x] I have a 3D printer or will be getting one before March 21st
 
@@ -307,7 +307,7 @@ The plastic fan shroud was cracked so badly that the threaded inserts fell out a
 
 Halfway through this print when it started underextruding really badly. Replacing the nozzle helped but did not eliminate the problem. I spent a while tweaking the hotend and at some point I accidentally stuck a wrench through the running hotend fan and broke it. So after ordering new fans, I'm calling it a day.
 
-## 4/20/25 - Redesign Electronics Mount, Y Axis Mounting
+## 4/20/25 - Redesign Electronics Mount, Y Axis Mounting (7 hrs)
 
 After printing the original stacked control board mount, I quickly realized that it was not going to work. There was simply not enough vertical clearance between the control boards, so routing the wires and screwing in the board would be near impossible. For this new design, I decided to lay out the boards side by side. The fans attach to a separate bracket that screws into the top of the mount. 
 
@@ -335,7 +335,7 @@ I also needed a custom bracket for the Y axis assembly. This is because the Y ax
 
 Afterwards, I returned to working on repairing the printer. Eventually, I figured out that the hotend was fine, and that it was just the extruder which couldn't push the filament through. The issue appears to be that the PTFE tube is scratched on the inside and thus has too much resistance. The final printer design is direct drive and thus this wouldn't be an issue, so I shouldn't need to worry about this anymore.
 
-## 4/21/25 - Print Parts, Design Buck Converter Mount
+## 4/21/25 - Print Parts, Start Assembly (6 hrs)
 
 That $3 buck converter I ordered has arrived today. I measured the dimensions, and tested the mounting with a small print. 
 
@@ -349,11 +349,11 @@ The missing parts from the Ender 3s that I purchased also arrived today. Everyth
 
 <img src="images/ender_3_missing_parts.jpg" height="400px"> 
 
-The screen and CR Touch worked perfectly.
+The screen and CR Touch worked perfectly. I'm probably going to use this screen in the final printer, but this would have to be done later, since the screen is not supported by Klipper.
 
 <img src="images/ender_3_working_screen.jpg" height="400px"> 
 
-I finished printing all of the parts for the electronics mount today, so I was able to assemble it. 
+I finished printing all of the parts for the electronics mount today, so I was able to assemble it. Everything went smoothly here.
 
 <img src="images/electronics_mount_3.jpg" height="400px"> 
 
