@@ -2,7 +2,7 @@ Made by: ading2210 // vk6
 
 Repository link: https://github.com/ading2210/ender-x4
 
-Total hours so far: 76
+Total hours so far: 82
 
 - [x] I have a 3D printer or will be getting one before March 21st
 
@@ -370,3 +370,31 @@ And then attached the feet to the frame, which completes the base of the frame.
 Finally, I attached the LCD to its mount.
 
 <img src="images/lcd_mount_2.jpg" height="400px"> 
+
+## 4/26/25 - Reverse Engineering, Start Redesigning (6 hrs)
+
+I noticed that the toolhead bracket on the Ender 3 V2 Neo is different from the bracket on the original Ender 3. It has different screw holes and the mounting for the hotend is offset. Fortunately, I can just print the original Ender 3 V1 toolhead bracket. However, I needed to modify it so that it's more rigid and to add cuts for M3 square nuts to sit in. 
+
+<img src="images/toolhead_bracket_modified.png" height="400px"> 
+
+I also modified the belt tensioner assembly so that the slots in the tensioner case are not at right angles. This should help with the printability of the model. 
+
+<img src="images/belt_tensioner.png" height="400px"> 
+
+I then spent some time reverse engineering the Z stent component on the Ender 3 V2 Neo. This part on the Ender 3 V2 Neo is different from the one on the Ender 3 V1 or V2, so I need to create a 3D model so I can reference it in the CAD design.
+
+I placed the Z stent on my document scanner, then imported and traced it in Fusion.
+
+<img src="images/ender_3_z_stent_1.jpg" height="400px"> 
+<img src="images/ender_3_z_stent_2.png" height="400px"> 
+
+Then, I had a model that almost exactly matched the original part. I also 3d printed it to confirm.
+
+<img src="images/ender_3_z_stent_3.png" height="400px"> 
+<img src="images/ender_3_z_stent_4.jpg" height="400px"> 
+
+Afterwards, I [put the model up on Printables](https://www.printables.com/model/1277986-ender-3-v2-neo-original-z-stent-3d-model), just in case it might be useful to anyone else. 
+
+After inserting the model into my design, I realized that my existing design for the X motor mount doesn't work since it'll intersect with the Z stent. 
+
+<img src="images/x_gantry_part_3.png" height="400px"> 
