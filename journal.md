@@ -134,7 +134,7 @@ Although the Z axis was complete, I still needed to put braces between both side
 
 Next, I modeled the mounts for the two PSUs and the power switch. I found that arranging the PSUs on their sides wastes the least amount of space, and simplifies the mounting hardware.
 
-<img src="images/psu_mount.png" height="400px"> 
+<img src="images/psu_mount_1.png" height="400px"> 
 
 To mount the 3 control boards, I have them arranged in a rack, with each stacked on top of each other. It's in a rack like this because it's the easiest to design and 3d print a mount for, even if the wiring will probably be messier. This rack attaches to the 4040 extrusion on the base of the printer. I'm a bit concerned that there won't be enough airflow across the control boards, but I'll have to wait until this is actually built to see if that will be a problem. 
 
@@ -398,3 +398,25 @@ Afterwards, I [put the model up on Printables](https://www.printables.com/model/
 After inserting the model into my design, I realized that my existing design for the X motor mount doesn't work since it'll intersect with the Z stent. 
 
 <img src="images/x_gantry_part_3.png" height="400px"> 
+
+## 4/27/25 - Continue Redesigning X Axis (2 hrs)
+
+I worked on redesigning the right side of the X gantry. This time, I made it so that it sits in front of the Z stent, and made it so the belt tensioner is integrated into the part.
+
+<img src="images/x_gantry_part_4.png" height="400px"> 
+
+## 5/10/25 - Finish X Gantry Redesign, Revise PSU Mount (7 hrs)
+
+I finished the X gantry redesign. I added the mount for the limit switch and the mounting for the X connector piece.
+
+<img src="images/x_gantry_part_5.png" height="400px"> 
+
+I then simplified the PSU mount and made it thinner to save on material.
+
+<img src="images/psu_mount_2.png" height="400px"> 
+
+I also needed to redesign the power switch mount because the power switch on the Ender 3 V2 is different than what it is on the Ender 3 V1. Also, my previous design was pretty bad.
+
+<img src="images/power_switch_mount.png" height="400px"> 
+
+I then started printing a bunch of parts for the spool holder and X gantry.
