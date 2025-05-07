@@ -2,11 +2,18 @@ Made by: ading2210 // vk6
 
 Repository link: https://github.com/ading2210/ender-x4
 
-Total hours so far: 82
+Total hours so far: 105
 
 - [x] I have a 3D printer or will be getting one before March 21st
 
 This printer is has been designed as part of Hack Club's [Infill](https://infill.hackclub.com/) event. 
+
+<!-- note: use this python script to count hours
+import pathlib, re
+journal_path = pathlib.Path("./JOURNAL.md")
+matches = re.findall(r"\(([\d.]+) hrs?\)", journal_path.read_text())
+print(sum(float(m) for m in matches))
+-->
 
 ## 3/13/25 - Research design goals and feasibility (2.5 hrs)
 
@@ -105,7 +112,7 @@ Creating the hotend assembly was a bit annoying because of the unconventional la
 
 Following the hotend assembly, I moved on to building both toolheads. This was relatively simple, since I just had to attach the hotend assembly to the extruder and X carriage base. I also added a mount for a CR Touch probe on the A toolhead.
 
-<img src="images/toolhead_a.png" height="400px"> 
+<img src="images/toolhead_a_1.png" height="400px"> 
 <img src="images/toolhead_b.png" height="400px"> 
 
 ## 4/7/25 - Finish X and Z Axis (10 hrs)
@@ -405,7 +412,7 @@ I worked on redesigning the right side of the X gantry. This time, I made it so 
 
 <img src="images/x_gantry_part_4.png" height="400px"> 
 
-## 5/10/25 - Finish X Gantry Redesign, Revise PSU Mount (7 hrs)
+## 5/3/25 - Finish X Gantry Redesign, Revise PSU Mount (7 hrs)
 
 I finished the X gantry redesign. I added the mount for the limit switch and the mounting for the X connector piece.
 
@@ -420,3 +427,33 @@ I also needed to redesign the power switch mount because the power switch on the
 <img src="images/power_switch_mount.png" height="400px"> 
 
 I then started printing a bunch of parts for the spool holder and X gantry.
+
+## 5/4/25 - Revise Toolhead, Continue Assembly (10 hrs)
+
+I disassembled most of the other Ender 3 in order to get some of the parts for the frame.
+
+<img src="images/ender_3_1_disassembled.jpg" height="400px"> 
+
+I noticed that the Ender 3 V2 Neo hotend, even though it has the same mounting holes, is about 4mm taller than the Ender 3 V1/V2 hotend. 
+
+<img src="images/ender_3_hotend_comparison.jpg" height="400px"> 
+
+So this required me to add an extra set of screw holes to the toolhead accommodate the taller V2 Neo hotend. I also added a counterbore to the fan mounting screws, which is needed otherwise one of the screws for the hotend fan doesn't fit.
+
+<img src="images/toolhead_a_2.png" height="400px"> 
+
+Another interesting thing I noticed while disassembling the printers was that the Ender 3 V2 Neo's X axis limit switch is different from the limit switch on the Ender 3 V1/V2. So it's basically useless to me. I don't have a clue as to why this switch needs to be so much larger and also lack mounting holes. It doesn't really matter for my printer though, since I have more spare limit switches that are the correct size.
+
+<img src="images/ender_3_limit_switch_comparison.jpg" height="400px"> 
+
+I then mounted part of the Z axis gantry and both PSUs. Apparently the CAD model had the wrong screw diameter though. The PSU uses M4 mounting holes instead of M3, so I simply expanded it with a drill.
+
+<img src="images/psu_mount_3.jpg" height="400px"> 
+
+During this time, both of my printers were printing parts constantly, until my old Ender 3 v1 had a hotend thermistor failure. It took about 30 minutes for me to replace it using a spare thermistor, and then it was up and running again.
+
+<img src="images/printed_parts_4.jpg" height="400px"> 
+<img src="images/printed_parts_5.jpg" height="400px"> 
+
+So far, I've used about 1.1 kg of filament, and I have about 2kg left to spare for this project.
+
