@@ -2,7 +2,7 @@ Made by: ading2210 // vk6
 
 Repository link: https://github.com/ading2210/ender-x4
 
-Total hours so far: 105
+Total hours so far: 110
 
 - [x] I have a 3D printer or will be getting one before March 21st
 
@@ -113,7 +113,7 @@ Creating the hotend assembly was a bit annoying because of the unconventional la
 Following the hotend assembly, I moved on to building both toolheads. This was relatively simple, since I just had to attach the hotend assembly to the extruder and X carriage base. I also added a mount for a CR Touch probe on the A toolhead.
 
 <img src="images/toolhead_a_1.png" height="400px"> 
-<img src="images/toolhead_b.png" height="400px"> 
+<img src="images/toolhead_b_1.png" height="400px"> 
 
 ## 4/7/25 - Finish X and Z Axis (10 hrs)
 
@@ -137,7 +137,7 @@ In the full printer assembly, I added the extrusions for the Z axis as well as t
 
 Although the Z axis was complete, I still needed to put braces between both sides of the Z gantry. On top of these braces, I put the 4 spool holders as well.
 
-<img src="images/top_assembly.png" height="400px"> 
+<img src="images/top_assembly_1.png" height="400px"> 
 
 Next, I modeled the mounts for the two PSUs and the power switch. I found that arranging the PSUs on their sides wastes the least amount of space, and simplifies the mounting hardware.
 
@@ -457,3 +457,70 @@ During this time, both of my printers were printing parts constantly, until my o
 
 So far, I've used about 1.1 kg of filament, and I have about 2kg left to spare for this project.
 
+## 5/5/25 - Assemble Toolheads (6 hrs)
+
+I assembled two of the toolheads today. It mostly worked fine, although fitting in all the screws was a bit annoying.
+
+Here's toolhead A:
+
+<img src="images/toolhead_a_3.jpg" height="400px"> 
+<img src="images/toolhead_a_4.jpg" height="400px"> 
+
+And toolhead B:
+
+<img src="images/toolhead_b_2.jpg" height="400px"> 
+<img src="images/toolhead_b_3.jpg" height="400px"> 
+
+Then I assembled part of the X gantry, and routed the lower belt for the A toolhead.
+
+<img src="images/x_gantry_part_6.jpg" height="400px"> 
+
+However, the belt tensioner on the left side had too much resistance on the idler pulley. Thus, I needed to make the belt tensioner puller thinner and to add a bit of space between it and the idler pulley.
+
+<img src="images/belt_tensioner_puller.png" height="400px"> 
+
+## 5/6/25 - Continue Assembling (3 hrs)
+
+I reassembled the belt tensioner and added the upper belt for the B toolhead. However, the force applied onto the motor mount by the belt caused it to bend slightly, which would have made the pulley misaligned. 
+
+<img src="images/x_gantry_part_6.jpg" height="400px"> 
+
+Thus, I reinforced the motor mount by making it thicker and adding additional bracing.
+
+<img src="images/x_gantry_part_7.png" height="400px"> 
+
+Then, I started reprinting this overnight.
+
+## 5/7/25 - Assemble Entire X Axis (7 hrs)
+
+With almost all of my printed parts done, I could focus on purely assembly today. 
+
+I got the remaining two toolheads done pretty easily.
+
+<img src="images/toolheads_ab.jpg" height="400px"> 
+
+Then, I assembled the other part of the X gantry. There was a clearance issue with part of the extra bracing I added, but this was easily fixable using some flush cutters. The extra bracing did help but did not completely eliminate the issue of the bracket bending slightly. Though this time, it's minor enough that I can just ignore it for now.
+
+<img src="images/x_gantry_parts.jpg" height="400px"> 
+
+After that, I assembled the entire X gantry together.
+
+<img src="images/x_gantry_1.jpg" height="400px"> 
+
+Then, I assembled most of the frame, and inserted the X axis into it. 
+
+<img src="images/x_gantry_2.jpg" height="400px"> 
+<img src="images/x_gantry_3.jpg" height="400px"> 
+<img src="images/x_gantry_4.jpg" height="400px"> 
+
+However, there was a bit of a glaring issue. The Z lead screws were bending outwards. I eventually figured out that this was caused by the fact that X motor mount on the Ender 3 V2 Neo is about 2.5mm further apart than on previous models. Thus, I needed to offset the Z lead screw by 2.5mm inward on each side, so I offset the nut on the X connector bar to do this.
+
+<img src="images/x_connector_offset.png" height="400px"> 
+
+## 5/8/25 - Fix X Axis, Complete Top Assembly (4 hrs)
+
+I fixed the issue of the Z lead screw being bent today, by installing the new X connector bars. I had a bit of difficulty actually screwing them in because some of the screws got stripped, but eventually I did succeed. 
+
+Then, I built the top assembly with the spool holders. I printed these parts long ago, so there were some adjustments I had to make to the counterbore diameter using a drill, but that was straightforward.
+
+<img src="images/top_assembly_2.jpg" height="400px"> 
