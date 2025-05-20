@@ -424,7 +424,7 @@ I then simplified the PSU mount and made it thinner to save on material.
 
 I also needed to redesign the power switch mount because the power switch on the Ender 3 V2 is different than what it is on the Ender 3 V1. Also, my previous design was pretty bad.
 
-<img src="images/power_switch_mount.png" height="400px"> 
+<img src="images/power_switch_mount_1.png" height="400px"> 
 
 I then started printing a bunch of parts for the spool holder and X gantry.
 
@@ -521,6 +521,29 @@ However, there was a bit of a glaring issue. The Z lead screws were bending outw
 
 I fixed the issue of the Z lead screw being bent today, by installing the new X connector bars. I had a bit of difficulty actually screwing them in because some of the screws got stripped, but eventually I did succeed. 
 
+
+
 Then, I built the top assembly with the spool holders. I printed these parts long ago, so there were some adjustments I had to make to the counterbore diameter using a drill, but that was straightforward.
 
 <img src="images/top_assembly_2.jpg" height="400px"> 
+
+## 5/10/25 - Complete Electronics and Wiring (10 hrs)
+
+I began by finishing the design for the power switch holder and printing it. I just needed to adjust the dimensions to accommodate the physical parts that I have. After that, the power switch and power socket fit perfectly. After mounting it to the frame, I found that it held with minimal bending.
+
+<img src="images/power_switch_mount_2.jpg" height="400px"> 
+
+Then, I finished the control boards assembly by mounting the SKR Mini E3 V2. 
+
+<img src="images/electronics_mount_5.jpg" height="400px"> 
+
+Afterwards, I spent a few hours working on the wiring and plugging everything in. I also had to splice some of the stepper motor cables so I could extend them in the middle.
+
+<img src="images/printer_assembly_9.jpg" height="400px"> 
+
+Then, I attached the screen powered on the printer, to make sure that nothing blew up. I hadn't yet flashed Klipper so the control boards weren't doing anything here. 
+
+<img src="images/printer_assembly_10.jpg" height="400px"> 
+
+I started installing and configuring Klipper. I had zero problems with my SKR Mini E3 V2, but the Creality v4.2.2 boards didn't show up at all via serial. I did notice that these boards I had were a later hardware revision that used a GigaDevice clone of an STM32 chip, but even after accounting for this in the Klipper config, nothing worked. Eventually, I just called it a day. 
+
