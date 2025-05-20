@@ -541,6 +541,10 @@ Afterwards, I spent a few hours working on the wiring and plugging everything in
 
 <img src="images/printer_assembly_9.jpg" height="400px"> 
 
+While I was doing that, I made this wiring guide so that I could keep track of where everything was plugged into.
+
+<img src="images/electronics_wiring_guide.png" height="400px"> 
+
 Then, I attached the screen powered on the printer, to make sure that nothing blew up. I hadn't yet flashed Klipper so the control boards weren't doing anything here. 
 
 <img src="images/printer_assembly_10.jpg" height="400px"> 

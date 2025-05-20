@@ -20,13 +20,15 @@ This project is unfinished. I have almost completed the design of the printer, b
 
 ## Images
 
-![A render of the printer assembly](images/printer_assembly_7.png)
+![A picture of the printer printing a benchy](images/printer_printing_benchy.jpg)
 
-![A render of the X axis assembly](images/x_assembly_3.png)
+![A render of the printer assembly](images/printer_assembly_11.png)
 
-![A render of the backside of the printer assembly](images/printer_assembly_8.png)
+![A render of the X axis assembly](images/x_assembly_4.png)
 
-![A render of the printer next to and ender 3](images/printer_next_to_ender_2.png)
+![A render of the printer assembly](images/printer_assembly_12.png)
+
+![A render of the printer next to an ender 3](images/printer_next_to_ender_3.png)
 
 ## License
 This project is licensed under the GNU GPL v3.
